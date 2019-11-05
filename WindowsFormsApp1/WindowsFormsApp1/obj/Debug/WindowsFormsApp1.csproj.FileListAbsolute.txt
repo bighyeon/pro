@@ -15,13 +15,11 @@ C:\Users\wkdlf\Desktop\kmo\pro\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Windo
 C:\Users\wkdlf\Desktop\kmo\pro\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
 C:\Users\wkdlf\Desktop\kmo\pro\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WebDriver.dll
 C:\Users\wkdlf\Desktop\kmo\pro\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WebDriver.xml
-C:\Users\wkdlf\Desktop\kmo\pro\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
 C:\Users\wkdlf\Desktop\kmo\pro\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
 C:\Users\wkdlf\Desktop\kmo\pro\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
 C:\Users\wkdlf\Desktop\kmo\pro\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
 C:\Users\wkdlf\Desktop\kmo\pro\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 C:\Users\wkdlf\Desktop\kmo\pro\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\wkdlf\Desktop\kmo\pro\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
-C:\Users\wkdlf\Desktop\kmo\pro\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\MetroFramework.Design.dll
 C:\Users\wkdlf\Desktop\kmo\pro\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\MetroFramework.dll
 C:\Users\wkdlf\Desktop\kmo\pro\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\MetroFramework.Fonts.dll

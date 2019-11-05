@@ -13,128 +13,57 @@ using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
 using System.Threading;
+using MetroFramework.Forms;
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MetroForm
     {
         
         
         public Form1()
         {
             InitializeComponent();
+
+            listView1.View = View.Details;
+
+            listView1.Columns.Add("Index", 50);
+            listView1.Columns.Add("Target", 200);
+            listView1.Columns.Add("작업내용", 200);
+            listView1.Columns.Add("인자", 120);
+
+            string[] arr = new string[4];
+
+
+            string[] row = { "TT", "TT", "TT", "TT"};
+            var listViewItem = new ListViewItem(row);
+            var listViewItem2 = new ListViewItem(row);
+            listView1.Items.Add(listViewItem);
+            listView1.Items.Add(listViewItem2);
+
+
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Random random = new Random();
+            Thread t1 = new Thread(new ThreadStart(Start_Thread));
+            t1.Start();
+        }
 
-            string path = @"C:\Users\danam\Desktop\ㅅㅅ.txt";
-            string[] txtdata = System.IO.File.ReadAllLines(path);
-            int data = txtdata.Length;
+        private void Start_Thread()
+        {
+            Css.RandomUrl Controller = new Css.RandomUrl();
+            Controller.Init_Selenium(0);
 
-            int num = random.Next(0, 4);
-            int Querynum = random.Next(data);
-
-            
-
-            if(num == 0)
-            {
-                
-                try
-                {
-                    IWebDriver Chrome = new ChromeDriver();
-                    Chrome.Url = "https://www.naver.com/";
-
-                    IWebElement q = Chrome.FindElement(By.Id("query"));
-                    q.Clear();
-                    q.SendKeys(txtdata[Querynum]);
-
-                    Chrome.FindElement(By.Id("search_btn")).Click();
-                    Thread.Sleep(5000);
-                }
-                catch(WebDriverException w)
-                {
-
-                }
-                    
-               
-            }
-            else if(num == 1) 
-            {
-                
-                try
-                {
-                    IWebDriver Edge = new EdgeDriver();
-                    Edge.Url = "https://www.naver.com/";
-
-
-                    IWebElement q = Edge.FindElement(By.Id("query"));
-                    q.Clear();
-                    q.SendKeys(txtdata[Querynum]);
-
-                    Edge.FindElement(By.Id("search_btn")).Click();
-                    Thread.Sleep(5000);
-                }
-                catch(WebDriverException w)
-                {
-                    
-                }
-               
-                
-            }
-            else if(num == 2)
-            {
-                
-                 try
-                {
-                    IWebDriver FireFox = new FirefoxDriver();
-                    FireFox.Url = "https://www.naver.com/";
-
-                    IWebElement q = FireFox.FindElement(By.Id("query"));
-
-                    q.SendKeys(txtdata[Querynum]);
-                    FireFox.FindElement(By.Id("search_btn")).Click();
-                    Thread.Sleep(5000);
-                }
-                catch(WebDriverException w)
-                {
-
-                }
-                
-                
-            }
-            else if(num == 3)
-            {
-                
-                try
-                {
-                    IWebDriver IE = new InternetExplorerDriver();
-                    IE.Url = "https://www.naver.com/";
-                   
-                   
-
-
-
-                    IWebElement q = IE.FindElement(By.Id("query"));
-
-                    q.SendKeys(txtdata[Querynum]);
-
-                    IE.FindElement(By.Id("search_btn")).Click();
-                    Thread.Sleep(5000);
-                }
-                catch(WebDriverException w)
-                {
-
-                }
-                
-            }
-            
-
-            
-             
         }
 
         private void button5_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
